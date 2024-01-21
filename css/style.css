@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    text-transform:none;
     transition: all .2s linear;
     text-decoration: none;
 }
@@ -108,7 +108,8 @@ body{
 .Introduction{
     min-height: 100vh;
     width: 100vw;
-    background:linear-gradient(#6C5CE7,var(--color));
+    background-size: cover;
+    background-image: url(../images/bgg.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,8 +127,8 @@ body{
 }
 
 .Introduction .slogan{
-    color:#eee;
-    font-size: 2.5rem;
+    color:#fff;
+    font-size: 3rem;
     font-weight: 400;
 }
 
@@ -180,28 +181,10 @@ body{
     }
 }
 
-.Introduction .fa-cog{
-    position: absolute;
-    font-size: 30rem;
-    opacity: .15;
-    color: #fff;
-    animation: rotate 10s linear infinite;
-}
 
 
-.Introduction .nut1{
-    top: 10%; left: -15rem;
-}
 
-.Introduction .nut2{
-    bottom: 23%; right: -13rem;
-}
 
-@keyframes rotate{
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
 .Causes{
     min-height: 100vh;
@@ -209,7 +192,7 @@ body{
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-color: #D0E3FF;
+    background: #EDF1F6;
 }
 
 .Causes .row{
@@ -237,6 +220,8 @@ body{
     font-size: 1.5rem;
     color: #333;
     padding: 1rem 0rem;
+    margin-right: 1rem;
+    line-height: 3rem;
 }
 
 .Causes::before, .Causes::after{
@@ -246,26 +231,82 @@ body{
     opacity:.2;
 }
 
-.Causes::before{
-    height:50rem;
-    width:50rem;
-    background:#ccc;
-    bottom:-10rem; left:-10rem;
+
+.Solutions{
+    min-height: 100vh;
+    width:100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(#EDF1F6, #D0E3FF);
 }
 
-.Causes::after{
-    height:60rem;
-    width:60rem;
-    background:#6C5CE7;
-    top:-10rem; right:-10rem;
+.Solutions .row{
+    margin: 2rem 0;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.Solutions .row .image img{
+    width: 30vw;
+}
 
+.Solutions .row .content{
+    text-align: left;
+    padding: 0 3rem;
+    margin-left: 3rem;
+}
 
+.Solutions .row .content h3{
+    font-size: 3rem;
+    color: var(--color);
+}
 
+.Solutions .row .content ul{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0rem;
+    line-height: 3rem;
+}
 
+.Our{
+    width:100vw;
+    min-height: 100vh;
+    text-align: center;
+    background:linear-gradient(#D0E3FF, #EDF1F6);
+}
 
+.Our .row{
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
 
+.Our .row .image img{
+    width: 25vw;
+}
+
+.Our .row .content{
+    text-align: left;
+    padding: 0 3rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.Our .row .content h3{
+    font-size: 3rem;
+    color: var(--color);
+}
+
+.Our .row .content p{
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem 0rem;
+    margin-right: 1rem;
+    line-height: 3rem;
+}
 
 
 
